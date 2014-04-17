@@ -10,7 +10,7 @@ library(brainR)
 #6th generation non-linear symmetric brain
 ##Downsampled to 8mm using FSL fslmaths -subsamp2
 
-template <- readNIfTI(system.file("MNI152_T1_1mm_brain.nii.gz", package="brainR")
+template <- readNIfTI(system.file("MNI152_T1_2mm_brain.nii.gz", package="brainR")
                       , reorient=FALSE)
 dtemp <- dim(template)
 ### 4500 - value that empirically value that presented a brain with gyri
@@ -20,7 +20,7 @@ brain <- contour3d(template, x=1:dtemp[1], y=1:dtemp[2],
 
 ### Example data courtesy of Daniel Reich
 ### Each visit is a binary mask of lesions in the brain
-imgs <- paste("Visit_", 1:5, ".nii.gz", sep="")
+imgs <- paste("Visit_", 1:5, "_2mm.nii.gz", sep="")
 files <- sapply(imgs, system.file, package='brainR')
 scene <- list(brain)
 ## loop through images and thresh
