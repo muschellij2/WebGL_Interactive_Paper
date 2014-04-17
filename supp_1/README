@@ -1,0 +1,7 @@
+Safari - works (need to enable WebGL by going to Safari -> Preferences -> Advanced -> Show Develop in menu bar.  Then Develop -> Enable WebGL
+
+Chrome if not working, please visit https://support.google.com/chrome/answer/1220892?hl=en or chrome://gpu/ in your browser to see if WebGL is available
+
+Firefox - WebGL should be enabled
+
+
